@@ -9,7 +9,7 @@ const fromObjectToList = object => (
     : []
 )
 
-class HomePage extends Component {
+class Dashboard extends Component {
   constructor (props) {
     super(props)
 
@@ -49,4 +49,4 @@ const UserList = ({ users }) => (
 
 const authCondition = authUser => !!authUser
 
-export default withAuthorization(authCondition)(HomePage)
+export default withAuthorization(authCondition)(Dashboard)
